@@ -13,7 +13,7 @@ class TowerSpider(object):
             "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
             "Cache-Control": "max-age=0",
             "Connection": "keep-alive",
-            "Cookie": "_ga=GA1.2.885085269.1539502103; remember_token=966da2cf-65e9-41a9-b29b-4587a782dc21; remember_team_guid=bb2a0fecbfd249a08bba914705e221fc; Hm_lvt_e1fa918d304786452f7d6936febd93c6=1555503669; _tower2_session=cc0d00d4a9f4b902710b810c5165ff07; Hm_lpvt_e1fa918d304786452f7d6936febd93c6=1556024302; _gid=GA1.2.444593312.1556024303; intercom-session-xbtsuf77=TDM3cHlES3QvRFlDMVlIRkphSE9PN2NrTFNLQk51VGcxcWtUWlJsMHJzQkYwOHJkbFEvSS85SmxVQTR0cGp2Sy0tMUVZSWE2Ykp6VWUyV3Q3VWQvN01wUT09--384f6d14a9444890322155f14fc9472f4e727a19; _gat_teamTracker=1",
+            "Cookie": "",
             "Host": "tower.im",
             "Upgrade-Insecure-Requests": "1",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
@@ -71,7 +71,7 @@ class TowerSpider(object):
         # 3. 时间
         self.get_time(work_list)
 
-        # 4.
+        # 4. 文件写入
         with open('todo.txt', 'a', encoding='utf-8') as f:
             f.write(str(work_list))
 
